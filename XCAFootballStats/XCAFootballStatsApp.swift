@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// Get free api key from https://www.football-data.org
+let apiKey = ""
+
 @main
 struct XCAFootballStatsApp: App {
     var body: some Scene {

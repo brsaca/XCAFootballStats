@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "xcafootballdataclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/brsaca/XCAFootballDataClient",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c113ef1952b5c085bc52278fc6ef91722fa7c54c"
+      }
+    }
+  ],
+  "version" : 2
+}

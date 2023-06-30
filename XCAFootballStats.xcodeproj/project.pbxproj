@@ -12,6 +12,10 @@
 		4B7F82242A4F456500B6CFA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82232A4F456500B6CFA0 /* ContentView.swift */; };
 		4B7F82262A4F456700B6CFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F82252A4F456700B6CFA0 /* Assets.xcassets */; };
 		4B7F82292A4F456700B6CFA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F82282A4F456700B6CFA0 /* Preview Assets.xcassets */; };
+		4B7F82312A4F4F0800B6CFA0 /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7F82302A4F4F0800B6CFA0 /* XCAFootballDataClient */; };
+		4B7F82342A4F4F4500B6CFA0 /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82332A4F4F4500B6CFA0 /* StandingsTableView.swift */; };
+		4B7F82372A4F501400B6CFA0 /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82362A4F501400B6CFA0 /* StandingsTableObservable.swift */; };
+		4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,9 @@
 		4B7F82232A4F456500B6CFA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B7F82252A4F456700B6CFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B7F82282A4F456700B6CFA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B7F82332A4F4F4500B6CFA0 /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
+		4B7F82362A4F501400B6CFA0 /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
+		4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7F82202A4F456500B6CFA0 /* RealityKitContent in Frameworks */,
+				4B7F82312A4F4F0800B6CFA0 /* XCAFootballDataClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +63,13 @@
 		4B7F821C2A4F456500B6CFA0 /* XCAFootballStats */ = {
 			isa = PBXGroup;
 			children = (
+				4B7F82352A4F4FF100B6CFA0 /* Observables */,
+				4B7F82322A4F4F2900B6CFA0 /* Views */,
 				4B7F82212A4F456500B6CFA0 /* XCAFootballStatsApp.swift */,
 				4B7F82232A4F456500B6CFA0 /* ContentView.swift */,
 				4B7F82252A4F456700B6CFA0 /* Assets.xcassets */,
 				4B7F82272A4F456700B6CFA0 /* Preview Content */,
+				4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */,
 			);
 			path = XCAFootballStats;
 			sourceTree = "<group>";
@@ -79,6 +90,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4B7F82322A4F4F2900B6CFA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F82332A4F4F4500B6CFA0 /* StandingsTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B7F82352A4F4FF100B6CFA0 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F82362A4F501400B6CFA0 /* StandingsTableObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +124,7 @@
 			name = XCAFootballStats;
 			packageProductDependencies = (
 				4B7F821F2A4F456500B6CFA0 /* RealityKitContent */,
+				4B7F82302A4F4F0800B6CFA0 /* XCAFootballDataClient */,
 			);
 			productName = XCAFootballStats;
 			productReference = 4B7F821A2A4F456500B6CFA0 /* XCAFootballStats.app */;
@@ -126,6 +154,9 @@
 				Base,
 			);
 			mainGroup = 4B7F82112A4F456400B6CFA0;
+			packageReferences = (
+				4B7F822F2A4F4F0800B6CFA0 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+			);
 			productRefGroup = 4B7F821B2A4F456500B6CFA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,6 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */,
+				4B7F82342A4F4F4500B6CFA0 /* StandingsTableView.swift in Sources */,
+				4B7F82372A4F501400B6CFA0 /* StandingsTableObservable.swift in Sources */,
 				4B7F82242A4F456500B6CFA0 /* ContentView.swift in Sources */,
 				4B7F82222A4F456500B6CFA0 /* XCAFootballStatsApp.swift in Sources */,
 			);
@@ -354,10 +388,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4B7F822F2A4F4F0800B6CFA0 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brsaca/XCAFootballDataClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		4B7F821F2A4F456500B6CFA0 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		4B7F82302A4F4F0800B6CFA0 /* XCAFootballDataClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B7F822F2A4F4F0800B6CFA0 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
+			productName = XCAFootballDataClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

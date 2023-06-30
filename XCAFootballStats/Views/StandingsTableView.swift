@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+import XCAFootballDataClient
 
 struct StandingsTableView: View {
+    
+    let competition: Competition
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .navigationTitle(competition.name)
     }
 }
 
 #Preview {
-    StandingsTableView()
+    NavigationStack {
+        StandingsTableView(competition: .defaultCompetitions[1])
+    }
 }
