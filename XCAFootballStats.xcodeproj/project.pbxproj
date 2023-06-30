@@ -18,6 +18,7 @@
 		4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */; };
 		4B7F823C2A4F564700B6CFA0 /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F823B2A4F564700B6CFA0 /* scorers.json */; };
 		4B7F823E2A4F566D00B6CFA0 /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F823D2A4F566D00B6CFA0 /* standings.json */; };
+		4B7F82402A4F588B00B6CFA0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F823F2A4F588B00B6CFA0 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
 		4B7F823B2A4F564700B6CFA0 /* scorers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
 		4B7F823D2A4F566D00B6CFA0 /* standings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		4B7F823F2A4F588B00B6CFA0 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				4B7F82252A4F456700B6CFA0 /* Assets.xcassets */,
 				4B7F82272A4F456700B6CFA0 /* Preview Content */,
 				4B7F82382A4F50FE00B6CFA0 /* FetchPhase.swift */,
+				4B7F823F2A4F588B00B6CFA0 /* Utilities.swift */,
 			);
 			path = XCAFootballStats;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */,
 				4B7F82342A4F4F4500B6CFA0 /* StandingsTableView.swift in Sources */,
+				4B7F82402A4F588B00B6CFA0 /* Utilities.swift in Sources */,
 				4B7F82372A4F501400B6CFA0 /* StandingsTableObservable.swift in Sources */,
 				4B7F82242A4F456500B6CFA0 /* ContentView.swift in Sources */,
 				4B7F82222A4F456500B6CFA0 /* XCAFootballStatsApp.swift in Sources */,
