@@ -17,7 +17,7 @@ class StandingsTableObservable {
     var fetchPhase = FetchPhase<[TeamStandingTable]>.initial
     var standings: [TeamStandingTable]? { fetchPhase.value }
     
-    func fetchStandings(competition: Competition) async {
+    func fetchStandingsForAPI(competition: Competition) async {
         fetchPhase = .fetching
         do {
             let standings = try await client.fetchStandings(competitionId: competition.id)
@@ -29,4 +29,17 @@ class StandingsTableObservable {
         }
     }
     
+    func fetchStandings(competition: Competition) async {
+        fetchPhase = .success(TeamStandingTable.stubs)
+    }
+    
+}
+
+extension TeamStandingTable {
+    
+    static var stubs: [TeamStandingTable] {
+        let url = Bundle.main.url(forResource: "standings", withExtension: "json")!
+        let standingResponse: StandingResponse = Utilities.loadStub(url: url)
+        return standingResponse.standings!.first { $0.type == "TOTAL" }!.table
+    }
 }
