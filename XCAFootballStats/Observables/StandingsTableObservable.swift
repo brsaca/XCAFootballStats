@@ -17,10 +17,24 @@ class StandingsTableObservable {
     var fetchPhase = FetchPhase<[TeamStandingTable]>.initial
     var standings: [TeamStandingTable]? { fetchPhase.value }
     
-    func fetchStandingsForAPI(competition: Competition) async {
+    var selectedFilter = FilterOption.latest
+    var filterOptions: [FilterOption] = {
+        var date = Calendar.current.date(byAdding: .year, value: -4, to: Date())!
+        var options = [FilterOption]()
+        for ii in 0..<3 {
+            if let nextYear = Calendar.current.date(byAdding: .year, value: 1, to: date) {
+                options.append(.year(Calendar.current.component(.year, from: nextYear)))
+                date = nextYear
+            }
+        }
+        options.append(.latest)
+        return options
+    }()
+    
+    func fetchStandings(competition: Competition) async {
         fetchPhase = .fetching
         do {
-            let standings = try await client.fetchStandings(competitionId: competition.id)
+            let standings = try await client.fetchStandings(competitionId: competition.id, filterOption: selectedFilter)
             if Task.isCancelled { return }
             fetchPhase = .success(standings)
         } catch {
@@ -28,11 +42,6 @@ class StandingsTableObservable {
             fetchPhase = .failure(error)
         }
     }
-    
-    func fetchStandings(competition: Competition) async {
-        fetchPhase = .success(TeamStandingTable.stubs)
-    }
-    
 }
 
 extension TeamStandingTable {

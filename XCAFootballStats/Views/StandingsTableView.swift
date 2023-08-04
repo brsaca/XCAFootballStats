@@ -3,7 +3,7 @@
 //  XCAFootballStats
 //
 //  Created by Brenda Saavedra Cantu on 30/06/23.
-//
+// RayZzURN9ge2
 
 import SwiftUI
 import XCAFootballDataClient
@@ -11,7 +11,7 @@ import XCAFootballDataClient
 struct StandingsTableView: View {
     
     let competition: Competition
-    var vm = StandingsTableObservable()
+    @Bindable var vm = StandingsTableObservable()
     
     var body: some View {
         Table(of: TeamStandingTable.self) {
@@ -99,10 +99,20 @@ struct StandingsTableView: View {
             }
         }
         .foregroundStyle(Color.primary)
-            .navigationTitle(competition.name)
-            .task {
-                await vm.fetchStandings(competition: competition)
+        .navigationTitle(competition.name)
+        .task (id: vm.selectedFilter.id) {
+            await vm.fetchStandings(competition: competition)
+        }
+        .toolbar {
+            ToolbarItem(placement: .bottomOrnament) {
+                Picker("Filter Options", selection: $vm.selectedFilter) {
+                    ForEach(vm.filterOptions, id: \.self) {
+                        season in
+                        Text(" \(season.text) ")
+                    }
+                }.pickerStyle(.segmented)
             }
+        }
     }
 }
 
