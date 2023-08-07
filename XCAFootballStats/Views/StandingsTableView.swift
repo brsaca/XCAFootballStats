@@ -99,7 +99,7 @@ struct StandingsTableView: View {
             }
         }
         .foregroundStyle(Color.primary)
-        .navigationTitle(competition.name)
+        .navigationTitle(competition.name + " standings ")
         .task (id: vm.selectedFilter.id) {
             await vm.fetchStandings(competition: competition)
         }
