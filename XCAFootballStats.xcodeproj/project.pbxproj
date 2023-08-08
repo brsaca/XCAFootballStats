@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B76F5C32A817B4F00D53CB9 /* StandingsTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76F5C22A817B4F00D53CB9 /* StandingsTabItemView.swift */; };
+		4B76F5C52A8188A000D53CB9 /* TopScorersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76F5C42A8188A000D53CB9 /* TopScorersTableView.swift */; };
+		4B76F5C72A8188F300D53CB9 /* TopScorersTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76F5C62A8188F300D53CB9 /* TopScorersTableObservable.swift */; };
 		4B7F82202A4F456500B6CFA0 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7F821F2A4F456500B6CFA0 /* RealityKitContent */; };
 		4B7F82222A4F456500B6CFA0 /* XCAFootballStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82212A4F456500B6CFA0 /* XCAFootballStatsApp.swift */; };
 		4B7F82242A4F456500B6CFA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F82232A4F456500B6CFA0 /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		4B76F5C22A817B4F00D53CB9 /* StandingsTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTabItemView.swift; sourceTree = "<group>"; };
+		4B76F5C42A8188A000D53CB9 /* TopScorersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTableView.swift; sourceTree = "<group>"; };
+		4B76F5C62A8188F300D53CB9 /* TopScorersTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTableObservable.swift; sourceTree = "<group>"; };
 		4B7F821A2A4F456500B6CFA0 /* XCAFootballStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCAFootballStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7F821E2A4F456500B6CFA0 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		4B7F82212A4F456500B6CFA0 /* XCAFootballStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAFootballStatsApp.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				4B7F82332A4F4F4500B6CFA0 /* StandingsTableView.swift */,
 				4B76F5C22A817B4F00D53CB9 /* StandingsTabItemView.swift */,
+				4B76F5C42A8188A000D53CB9 /* TopScorersTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				4B7F82362A4F501400B6CFA0 /* StandingsTableObservable.swift */,
+				4B76F5C62A8188F300D53CB9 /* TopScorersTableObservable.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -208,7 +214,9 @@
 				4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */,
 				4B76F5C32A817B4F00D53CB9 /* StandingsTabItemView.swift in Sources */,
 				4B7F82342A4F4F4500B6CFA0 /* StandingsTableView.swift in Sources */,
+				4B76F5C52A8188A000D53CB9 /* TopScorersTableView.swift in Sources */,
 				4B7F82402A4F588B00B6CFA0 /* Utilities.swift in Sources */,
+				4B76F5C72A8188F300D53CB9 /* TopScorersTableObservable.swift in Sources */,
 				4B7F82372A4F501400B6CFA0 /* StandingsTableObservable.swift in Sources */,
 				4B7F82242A4F456500B6CFA0 /* ContentView.swift in Sources */,
 				4B7F82222A4F456500B6CFA0 /* XCAFootballStatsApp.swift in Sources */,
