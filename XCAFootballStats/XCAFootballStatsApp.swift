@@ -8,13 +8,19 @@
 import SwiftUI
 
 // Get free api key from https://www.football-data.org
-let apiKey = ""
+let apiKey = "e521ce48768246a581d1eec504e04fa6"
 
 @main
 struct XCAFootballStatsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                StandingsTabItemView()
+                    .tabItem { Label("Standings", systemImage: "table.fill") }
+                
+                TopScorersTabItemView()
+                    .tabItem { Label("Top Scorers", systemImage: "soccerball.inverse") }
+            }
         }
     }
 }
