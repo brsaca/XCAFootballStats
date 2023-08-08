@@ -1,4 +1,4 @@
-# XCAFootballStats 👋
+# XCAFootballStats - visionOS 👋
 
 A project to test visionOS based on [Build a visionOS Football Stats SwiftUI App | Apple Vision Pro
 ]([https://www.youtube.com/watch?v=r61KA8Gzw0M])
