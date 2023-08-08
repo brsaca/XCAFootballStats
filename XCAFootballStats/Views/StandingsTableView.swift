@@ -94,6 +94,8 @@ struct StandingsTableView: View {
         .overlay {
             switch vm.fetchPhase {
                 case .fetching: ProgressView()
+                case .success(let scorers) where scorers.isEmpty:
+                    Text("Scorers not available").font(.headline)
                 case .failure(let error): Text(error.localizedDescription).font(.headline)
                 default: EmptyView()
             }
