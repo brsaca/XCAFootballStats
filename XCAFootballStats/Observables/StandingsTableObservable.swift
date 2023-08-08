@@ -41,6 +41,10 @@ class StandingsTableObservable {
             if Task.isCancelled { return }
             fetchPhase = .failure(error)
         }
+
+        //#warning("remove hardcode to get data from API")
+        //fetchPhase = .success(TeamStandingTable.stubs)
+
     }
 }
 
