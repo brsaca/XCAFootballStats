@@ -22,6 +22,7 @@
 		4B7F823C2A4F564700B6CFA0 /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F823B2A4F564700B6CFA0 /* scorers.json */; };
 		4B7F823E2A4F566D00B6CFA0 /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F823D2A4F566D00B6CFA0 /* standings.json */; };
 		4B7F82402A4F588B00B6CFA0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F823F2A4F588B00B6CFA0 /* Utilities.swift */; };
+		4B8050BA2A82A5F4003D51BA /* TopScorersTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8050B92A82A5F4003D51BA /* TopScorersTabItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4B7F823B2A4F564700B6CFA0 /* scorers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
 		4B7F823D2A4F566D00B6CFA0 /* standings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
 		4B7F823F2A4F588B00B6CFA0 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4B8050B92A82A5F4003D51BA /* TopScorersTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTabItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4B7F82332A4F4F4500B6CFA0 /* StandingsTableView.swift */,
 				4B76F5C22A817B4F00D53CB9 /* StandingsTabItemView.swift */,
 				4B76F5C42A8188A000D53CB9 /* TopScorersTableView.swift */,
+				4B8050B92A82A5F4003D51BA /* TopScorersTabItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7F82392A4F50FE00B6CFA0 /* FetchPhase.swift in Sources */,
+				4B8050BA2A82A5F4003D51BA /* TopScorersTabItemView.swift in Sources */,
 				4B76F5C32A817B4F00D53CB9 /* StandingsTabItemView.swift in Sources */,
 				4B7F82342A4F4F4500B6CFA0 /* StandingsTableView.swift in Sources */,
 				4B76F5C52A8188A000D53CB9 /* TopScorersTableView.swift in Sources */,
