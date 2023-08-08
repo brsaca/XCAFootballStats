@@ -28,11 +28,11 @@ A project to test visionOS based on [Build a visionOS Football Stats SwiftUI App
 ## 📝 Description
 
 ## 🤖 API
-
+- Get free api key from [Football Data](https://www.football-data.org)
 
 ## 👤 Author
 
 **Brenda Saavedra**
 
 - WebPage: [brendasaavedra.com](http://brendasaavedra.com)
-- Github: [@brenfondeadora](https://github.com/brsaca/)
+- Github: [@brsaca](https://github.com/brsaca/)
